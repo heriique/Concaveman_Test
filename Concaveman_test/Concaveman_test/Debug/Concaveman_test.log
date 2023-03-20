@@ -1,0 +1,219 @@
+﻿  concaveman.cpp
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.cpp(58): warning C4018: '<': signed/unsigned mismatch
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(216): error C2668: 'make_unique': ambiguous call to overloaded function
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(28): note: could be 'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*&,const std::array<T,4>&>(CircularElement<node_type> *&,const std::array<T,4> &)'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  d:\visual studio community\vc\tools\msvc\14.16.27023\include\memory(2537): note: or       'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> std::make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*&,const std::array<T,4>&,0>(CircularElement<node_type> *&,const std::array<T,4> &)' [found using argument-dependent lookup]
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(216): note: while trying to match the argument list '(CircularElement<node_type> *, const std::array<T,4>)'
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(210): note: while compiling class template member function 'void rtree<T,2,16,circ_elem_ptr_type>::insert(CircularElement<node_type> *,const std::array<T,4> &)'
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(613): note: see reference to function template instantiation 'void rtree<T,2,16,circ_elem_ptr_type>::insert(CircularElement<node_type> *,const std::array<T,4> &)' being compiled
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(609): note: see reference to class template instantiation 'rtree<T,2,16,circ_elem_ptr_type>' being compiled
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.cpp(51): note: see reference to function template instantiation 'std::vector<point_type,std::allocator<_Ty>> concaveman<T,16>(const std::vector<_Ty,std::allocator<_Ty>> &,const std::vector<int,std::allocator<int>> &,T,T)' being compiled
+          with
+          [
+              _Ty=point_type,
+              T=T
+          ]
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(217): error C3536: 'r': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(217): error C2664: 'void std::list<std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::push_back(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': cannot convert argument 1 from 'int' to '_Ty &&'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+          and
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(217): note: Reason: cannot convert from 'int' to '_Ty'
+          with
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(217): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(238): error C2668: 'make_unique': ambiguous call to overloaded function
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(28): note: could be 'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*,const std::array<T,4>&>(CircularElement<node_type> *&&,const std::array<T,4> &)'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  d:\visual studio community\vc\tools\msvc\14.16.27023\include\memory(2537): note: or       'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> std::make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*,const std::array<T,4>&,0>(CircularElement<node_type> *&&,const std::array<T,4> &)' [found using argument-dependent lookup]
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(239): note: while trying to match the argument list '(CircularElement<node_type> *, const std::array<T,4>)'
+          with
+          [
+              T=T
+          ]
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(242): error C3536: 'leaf': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(242): error C2664: 'void std::list<std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::push_back(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': cannot convert argument 1 from 'int' to '_Ty &&'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+          and
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(242): note: Reason: cannot convert from 'int' to '_Ty'
+          with
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\concaveman.h(242): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+  test_concaveman.cpp
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(7): error C2143: syntax error: missing ';' before '<'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(8): error C2059: syntax error: '<'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(9): error C2059: syntax error: '<'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(10): error C2059: syntax error: '<'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(11): error C2065: 'myrtree': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(11): error C2146: syntax error: missing ';' before identifier 'tree'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(11): error C2065: 'tree': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(12): error C2065: 'myrtree2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(12): error C2146: syntax error: missing ';' before identifier 'tree2'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(12): error C2065: 'tree2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(13): error C2065: 'myrtree3': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(13): error C2146: syntax error: missing ';' before identifier 'tree3'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(13): error C2065: 'tree3': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(14): error C2065: 'myrtree4': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(14): error C2146: syntax error: missing ';' before identifier 'tree4'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(14): error C2065: 'tree4': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(18): error C3861: 'random': identifier not found
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(19): error C3861: 'random': identifier not found
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(20): error C3861: 'random': identifier not found
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(21): error C3861: 'random': identifier not found
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C2653: 'myrtree': is not a class or namespace name
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C2065: 'bounds_type': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C2146: syntax error: missing ';' before identifier 'bounds'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C2065: 'bounds': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C2039: 'min': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C3536: 'a': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C3536: 'c': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C3861: 'min': identifier not found
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C3536: 'b': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(22): error C3536: 'd': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(23): error C2039: 'max': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(23): error C3861: 'max': identifier not found
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(24): error C2065: 'tree': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(24): error C2065: 'bounds': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(25): error C2065: 'tree2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(25): error C2065: 'bounds': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(26): error C2065: 'tree3': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(26): error C2065: 'bounds': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(27): error C2065: 'tree4': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(27): error C2065: 'bounds': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(33): error C2065: 'tree': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(34): error C2065: 'tree2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(35): error C2039: 'set': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(35): error C2065: 'set': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(35): error C2065: 'intptr_t': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(35): error C2065: 's': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(35): error C2065: 's2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(36): error C3536: 'isect': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(37): error C3312: no callable 'begin' function found for type 'int'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(37): error C3312: no callable 'end' function found for type 'int'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(37): error C2065: 's': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(37): error C2065: 'node': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(38): error C3536: 'isect2': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(39): error C3312: no callable 'begin' function found for type 'int'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(39): error C3312: no callable 'end' function found for type 'int'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(39): error C2065: 's2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(39): error C2065: 'node': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(40): error C2039: 'cout': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(40): error C2065: 'cout': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(40): error C2065: 's': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(40): error C2065: 's2': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(40): error C2039: 'endl': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(40): error C2065: 'endl': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(41): error C2065: 's': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(42): error C3312: no callable 'begin' function found for type 'unknown-type'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(42): error C3312: no callable 'end' function found for type 'unknown-type'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(42): error C2039: 'cout': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(42): error C2065: 'cout': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(42): error C2065: 'data': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(43): error C2039: 'cout': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(43): error C2065: 'cout': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(43): error C2039: 'endl': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(43): error C2065: 'endl': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(76): error C2039: 'cout': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(76): error C2065: 'cout': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(78): error C2065: 'sqSegDist': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(78): error C2062: type 'double' unexpected
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(78): error C2143: syntax error: missing ';' before '{'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(78): error C2143: syntax error: missing ';' before '}'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(78): error C2059: syntax error: ','
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(78): error C2059: syntax error: ')'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(79): error C2039: 'cout': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(79): error C2143: syntax error: missing ';' before '<<'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(79): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(79): error C2039: 'endl': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(80): error C2065: 'a': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2065: 'sqSegDist': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2062: type 'double' unexpected
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2143: syntax error: missing ';' before '{'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2143: syntax error: missing ')' before ';'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2447: '{': missing function header (old-style formal list?)
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2059: syntax error: ','
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(82): error C2059: syntax error: ')'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(83): error C2039: 'cout': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(83): error C2143: syntax error: missing ';' before '<<'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(83): error C2086: 'int cout': redefinition
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(79): note: see declaration of 'cout'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(83): error C2039: 'endl': is not a member of 'std'
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(84): error C3536: 'b': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(84): error C2374: 'assert': redefinition; multiple initialization
+  c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(80): note: see declaration of 'assert'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(86): error C2065: 'sqSegDist': undeclared identifier
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(86): error C2062: type 'double' unexpected
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(86): error C2143: syntax error: missing ';' before '{'
+c:\users\eric\dropbox\visual studio 2017\projects\concaveman_test\concaveman_test\test_concaveman.cpp(86): fatal error C1003: error count exceeds 100; stopping compilation
+  Generating Code...
